@@ -1,15 +1,11 @@
 import { useRoutes } from "react-router-dom";
+import Home from "./pages/home/Home";
 
-const routes = [{ path: "/", element: <></> }];
+const routes = [{ path: "/", element: <Home /> }];
 
 function App() {
   const router = useRoutes(routes);
-  return (
-    <>
-      <div className="bg-gray-300">hello</div>
-      {router}
-    </>
-  );
+  return <>{router}</>;
 }
 
 export default App;
