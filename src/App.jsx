@@ -1,7 +1,14 @@
 import { useRoutes } from "react-router-dom";
-import Home from "./pages/home/Home";
+import "./App.css";
 
-const routes = [{ path: "/", element: <Home /> }];
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "/Login", element: <Login /> },
+
+];
 
 function App() {
   const router = useRoutes(routes);
